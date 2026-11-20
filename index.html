@@ -36,7 +36,449 @@
      This box is empty on purpose. In Part 7 you paste an interactive
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
-<div class="showcase"></div>
+<div class="showcase">
+<!-- HTML: Creates the interactive Yzabella's Wonderland beauty showcase. -->
+<div class="showcase">
+  <div class="showcase-card">
+    <div class="showcase-sparkle sparkle-one">✧</div>
+    <div class="showcase-sparkle sparkle-two">✦</div>
+    <div class="showcase-sparkle sparkle-three">♡</div>
+
+    <div class="showcase-content">
+      <div class="showcase-eyebrow">✧ YOUR BEAUTY, YOUR WONDERLAND ✧</div>
+      <div class="showcase-title">Yzabella's<br><em>Wonderland</em></div>
+      <div class="showcase-line"></div>
+      <div class="showcase-description">
+        A little glam, a little magic, and a whole lot of pretty.
+      </div>
+
+      <div class="showcase-label">CHOOSE YOUR BEAUTY MOMENT</div>
+
+      <div class="showcase-buttons">
+        <button class="showcase-choice active" data-look="lashes">
+          ♡ Lash Clusters
+        </button>
+        <button class="showcase-choice" data-look="blush">
+          ♡ Blush
+        </button>
+        <button class="showcase-choice" data-look="lips">
+          ♡ Lip Liner
+        </button>
+      </div>
+
+      <div class="showcase-message" aria-live="polite">
+        Flirty lashes, unforgettable eyes.
+      </div>
+    </div>
+
+    <div class="showcase-girl">
+      <svg viewBox="0 0 330 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated beauty girl applying makeup">
+        <defs>
+          <linearGradient id="showcaseSkin" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#fce0d3"/>
+            <stop offset="100%" stop-color="#d99b91"/>
+          </linearGradient>
+          <linearGradient id="showcaseHair" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#481b32"/>
+            <stop offset="100%" stop-color="#170b19"/>
+          </linearGradient>
+          <linearGradient id="showcaseTop" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#c34b91"/>
+            <stop offset="100%" stop-color="#79004f"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Hair behind face -->
+        <path d="M65 160 Q30 40 140 25 Q280 -5 286 150 L315 390 L18 390 Z"
+          fill="url(#showcaseHair)"/>
+
+        <!-- Neck -->
+        <path d="M125 260 L125 315 Q165 350 205 310 L196 250Z"
+          fill="url(#showcaseSkin)"/>
+
+        <!-- Shirt -->
+        <path d="M68 390 Q72 307 130 294 Q170 330 210 294 Q285 317 300 390Z"
+          fill="url(#showcaseTop)"/>
+
+        <!-- Face -->
+        <path d="M85 110 Q88 42 166 48 Q245 42 250 125
+          L239 210 Q220 275 166 280 Q105 267 89 209Z"
+          fill="url(#showcaseSkin)"/>
+
+        <!-- Hair framing -->
+        <path d="M84 157 Q50 60 126 33 Q222 -5 263 84
+          Q280 121 248 167 Q244 87 199 79
+          Q147 115 87 117Z"
+          fill="url(#showcaseHair)"/>
+        <path d="M83 125 Q48 180 72 292 L37 345
+          Q18 170 50 99Z" fill="#281021"/>
+        <path d="M246 120 Q279 184 257 305 L293 352
+          Q323 180 272 90Z" fill="#281021"/>
+
+        <!-- Eyebrows -->
+        <path d="M103 151 Q127 134 148 151" stroke="#572a31"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M183 151 Q210 133 231 150" stroke="#572a31"
+          stroke-width="6" fill="none" stroke-linecap="round"/>
+
+        <!-- Eyes -->
+        <path d="M102 173 Q127 153 151 173 Q129 195 102 173Z"
+          fill="#fff7f2"/>
+        <path d="M181 173 Q206 153 232 173 Q207 195 181 173Z"
+          fill="#fff7f2"/>
+        <ellipse cx="128" cy="174" rx="9" ry="11" fill="#522d37"/>
+        <ellipse cx="207" cy="174" rx="9" ry="11" fill="#522d37"/>
+        <circle cx="131" cy="170" r="3" fill="white"/>
+        <circle cx="210" cy="170" r="3" fill="white"/>
+
+        <!-- Lash detail -->
+        <g class="showcase-lash-detail" stroke="#301522" stroke-width="3" fill="none" stroke-linecap="round">
+          <path d="M102 166 L96 158 M112 159 L109 149 M124 157 L123 146 M137 159 L142 149 M148 165 L155 158"/>
+          <path d="M181 166 L176 158 M191 159 L189 149 M204 157 L204 146 M218 159 L223 149 M229 165 L236 158"/>
+        </g>
+
+        <!-- Blush -->
+        <g class="showcase-blush-detail" opacity="0.65">
+          <ellipse cx="104" cy="207" rx="22" ry="12" fill="#ed7999"/>
+          <ellipse cx="226" cy="207" rx="22" ry="12" fill="#ed7999"/>
+        </g>
+
+        <!-- Nose -->
+        <path d="M163 177 Q154 209 160 212 Q168 218 176 211"
+          stroke="#bd8178" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+        <!-- Lips -->
+        <path class="showcase-lip-detail"
+          d="M139 237 Q151 224 166 232 Q180 224 195 237
+          Q184 258 166 257 Q148 258 139 237Z"
+          fill="#a84965"/>
+        <path d="M144 237 Q166 243 190 237"
+          fill="none" stroke="#f6bdc2" stroke-width="2"/>
+
+        <!-- Earrings -->
+        <circle cx="78" cy="221" r="7" fill="#eac2a0"/>
+        <circle cx="254" cy="221" r="7" fill="#eac2a0"/>
+
+        <!-- Hand holding makeup wand -->
+        <path d="M288 319 Q270 297 251 273 L218 223
+          Q207 212 200 221 Q195 229 207 245
+          L230 280 Q210 262 204 274
+          Q201 283 216 298 L251 343Z"
+          fill="url(#showcaseSkin)" stroke="#c78e83" stroke-width="1.5"/>
+
+        <!-- Makeup brush / lash applicator -->
+        <g class="showcase-tool">
+          <path d="M218 238 L153 145" stroke="#4a263c" stroke-width="5" stroke-linecap="round"/>
+          <path d="M148 138 L138 122 Q136 115 143 111 L151 116 L157 135Z"
+            fill="#e3b3c7"/>
+          <path d="M145 132 L157 140" stroke="#990066" stroke-width="2"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="showcase-bottom">
+      <span>MADE WITH LOVE ♡</span>
+      <span>BEAUTY IS YOUR MAGIC</span>
+    </div>
+  </div>
+</div>
+
+<style>
+/* CSS: Styles the showcase with a pink, berry and dreamy luxury aesthetic. */
+.showcase {
+  width: 100%;
+  max-width: 100%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  box-sizing: border-box;
+}
+
+.showcase * {
+  box-sizing: border-box;
+}
+
+.showcase .showcase-card {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  max-height: 490px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #fff0fc 0%, #f9d9ef 55%, #eeb9d9 100%);
+  border: 1px solid #e7b1d2;
+  color: #990066;
+}
+
+.showcase .showcase-content {
+  position: relative;
+  z-index: 3;
+  width: 58%;
+  padding: 43px 0 20px 6%;
+}
+
+.showcase .showcase-eyebrow {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-bottom: 17px;
+  font-weight: bold;
+}
+
+.showcase .showcase-title {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 0.99;
+  font-weight: normal;
+  letter-spacing: -1.5px;
+}
+
+.showcase .showcase-title em {
+  font-weight: normal;
+  color: #c04491;
+}
+
+.showcase .showcase-line {
+  width: 65px;
+  height: 2px;
+  margin: 19px 0;
+  background: #990066;
+}
+
+.showcase .showcase-description {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 270px;
+  color: #75405f;
+}
+
+.showcase .showcase-label {
+  margin-top: 24px;
+  margin-bottom: 11px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.showcase .showcase-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  max-width: 350px;
+}
+
+.showcase .showcase-choice {
+  background: rgba(255,255,255,0.65);
+  border: 1px solid #c477a9;
+  border-radius: 30px;
+  color: #990066;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.showcase .showcase-choice:hover,
+.showcase .showcase-choice.active {
+  background: #990066;
+  color: #fff0fc;
+  border-color: #990066;
+  transform: translateY(-2px);
+}
+
+.showcase .showcase-message {
+  margin-top: 15px;
+  font-size: 13px;
+  font-style: italic;
+  color: #9b3677;
+  min-height: 20px;
+}
+
+.showcase .showcase-girl {
+  position: absolute;
+  z-index: 2;
+  width: 48%;
+  height: 100%;
+  right: -3%;
+  bottom: -1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.showcase .showcase-girl svg {
+  width: 100%;
+  height: 100%;
+  max-height: 425px;
+  overflow: visible;
+}
+
+.showcase .showcase-blush-detail {
+  transition: opacity 0.3s ease;
+}
+
+.showcase .showcase-card[data-look="blush"] .showcase-blush-detail {
+  opacity: 1;
+}
+
+.showcase .showcase-card[data-look="lashes"] .showcase-lash-detail {
+  stroke: #160817;
+  stroke-width: 4;
+}
+
+.showcase .showcase-card[data-look="lips"] .showcase-lip-detail {
+  fill: #990066;
+}
+
+.showcase .showcase-sparkle {
+  position: absolute;
+  z-index: 1;
+  color: #bd64a0;
+  pointer-events: none;
+}
+
+.showcase .sparkle-one {
+  top: 32px;
+  right: 37%;
+  font-size: 30px;
+}
+
+.showcase .sparkle-two {
+  top: 180px;
+  right: 4%;
+  font-size: 25px;
+}
+
+.showcase .sparkle-three {
+  bottom: 65px;
+  right: 43%;
+  font-size: 25px;
+}
+
+.showcase .showcase-bottom {
+  position: absolute;
+  z-index: 4;
+  bottom: 14px;
+  left: 6%;
+  right: 6%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #a14c80;
+  border-top: 1px solid rgba(153,0,102,0.2);
+  padding-top: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .showcase .showcase-card {
+    height: 440px;
+    border-radius: 12px;
+  }
+
+  .showcase .showcase-content {
+    width: 68%;
+    padding: 32px 0 15px 5%;
+  }
+
+  .showcase .showcase-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .showcase .showcase-title {
+    font-size: clamp(29px, 8vw, 39px);
+  }
+
+  .showcase .showcase-description {
+    max-width: 210px;
+    font-size: 12px;
+  }
+
+  .showcase .showcase-label {
+    margin-top: 19px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .showcase .showcase-buttons {
+    max-width: 210px;
+    gap: 6px;
+  }
+
+  .showcase .showcase-choice {
+    font-size: 10px;
+    padding: 8px 9px;
+  }
+
+  .showcase .showcase-message {
+    max-width: 180px;
+    font-size: 11px;
+  }
+
+  .showcase .showcase-girl {
+    width: 57%;
+    right: -15%;
+    opacity: 0.95;
+  }
+
+  .showcase .showcase-girl svg {
+    max-height: 350px;
+  }
+
+  .showcase .showcase-bottom {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .showcase .sparkle-one {
+    right: 30%;
+    top: 15px;
+  }
+}
+</style>
+
+<script>
+/* JavaScript: Makes the three beauty buttons interactive. */
+(function () {
+  const showcase = document.currentScript.closest('.showcase');
+  if (!showcase) return;
+
+  const card = showcase.querySelector('.showcase-card');
+  const buttons = showcase.querySelectorAll('.showcase-choice');
+  const message = showcase.querySelector('.showcase-message');
+
+  const looks = {
+    lashes: 'Flirty lashes, unforgettable eyes. ♡',
+    blush: 'A rosy glow and a little main character magic. ♡',
+    lips: 'Perfectly lined lips, perfectly YOU. ♡'
+  };
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const look = button.dataset.look;
+
+      card.dataset.look = look;
+      message.textContent = looks[look];
+
+      buttons.forEach(function (item) {
+        item.classList.remove('active');
+        item.setAttribute('aria-pressed', 'false');
+      });
+
+      button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
+    });
+  });
+
+  buttons.forEach(function (button) {
+    button.setAttribute(
+      'aria-pressed',
+      button.classList.contains('active') ? 'true' : 'false'
+    );
+  });
+})();
+</script>
+</div>
 
 <!-- Footer: fill in your name -->
 <footer>Built by Yzabella Jasso &middot; BMIS 235</footer>
